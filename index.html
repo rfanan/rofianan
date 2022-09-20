@@ -5,21 +5,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="dist/output.css" rel="stylesheet">
+    <title>PT. Bahana Andalan Pasti</title>
 </head>
 
 <body>
     <!-- navbar -->
-
-
+    <header class="bg-transparent absolute top-0 left-0 w-full items-center z-10">
+        <div class="container">
+            <div class="flex items-center justify-between  relative">
+                <div class="px-4">
+                    <a href="#home" class="font-bold text-lg text-purple-700 block py-6">Nama / Logo </a>
+                </div>
+                <div class="flex items-center px-4">
+                    <button id="rotilapis" name="rotilapis" type="button" class="block absolute right-4 lg:hidden">
+                        <span class="roti-lapis transition duration-300 ease-in-out origin-top-left"></span>
+                        <span class="roti-lapis transition duration-300 ease-in-out"></span>
+                        <span class="roti-lapis transition duration-300 ease-in-out origin-bottom-left"></span>
+                    </button>
+                    <nav id="nav-menu"
+                        class="absolute hidden py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                        <ul class="block lg:flex">
+                            <li class="group">
+                                <a href="#home"
+                                    class="text-base text-dark py-2 mx-8 group-hover:text-textHover flex">Home</a>
+                            </li>
+                            <li class="group">
+                                <a href="#about"
+                                    class="text-base text-dark py-2 mx-8 group-hover:text-textHover flex">About</a>
+                            </li>
+                            <li class="group">
+                                <a href="#product"
+                                    class="text-base text-dark py-2 mx-8 group-hover:text-textHover flex">Product</a>
+                            </li>
+                            <li class="group">
+                                <a href="#client"
+                                    class="text-base text-dark py-2 mx-8 group-hover:text-textHover flex">Client</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
     <!-- navbar end -->
-
 
     <!-- Hero section start -->
     <section id="home" class="pt-36">
         <div class="container">
             <div class="flex flex-warp">
                 <div class="w-full self-center px-4">
-                    <h1 class="font-semibold text-orange-300">Hello World</h1>
+                    <h1 class="font-semibold text-purple-700">ini section Hero atau bisa untuk <span
+                            class="block text-dark text-4xl mt-1">
+                            deskripsi product
+                        </span></h1>
+                    <h2 class="font-medium mb-10">..........................................</h2>
+                    <a href="#" class="text-base font-semibold text-white bg-purple-600 py-2 px-8 rounded-full">Click
+                        me!</a>
+                </div>
+                <div class="w-full self-end px-4">
+                    <div class="relative mt-10">
+                        <img src="dist/img/1.jpg" alt="" class="max-w-full mx-auto rounded-full w-60 h-80">
+                    </div>
                 </div>
             </div>
         </div>
@@ -70,6 +116,8 @@
             </div>
         </div>
     </div>
+
+    <script src="dist/js/script.js"></script>
 </body>
 
 </html>

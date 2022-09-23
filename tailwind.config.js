@@ -10,6 +10,13 @@ module.exports = {
       colors: {
         textHover: '#1d4ed8',
         dark: '#0f172a',
+        primary: '#7e22ce'
+      },
+      width: {
+        128: '26rem',
+      },
+      height: {
+        129: '38rem',
       },
       screens: {
         '2xl': '1320px',

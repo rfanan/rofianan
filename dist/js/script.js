@@ -16,3 +16,10 @@ window.onscroll = function () {
         header.classList.remove('navbar-fixed');
     }
 }
+
+window.addEventListener('click', function (e) {
+    if (e.target != rotilapis && e.target != navMenu) {
+        rotilapis.classList.remove('rotilapis-active');
+        navMenu.classList.add('hidden');
+    }
+});

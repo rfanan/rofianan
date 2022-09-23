@@ -19,7 +19,7 @@ module.exports = {
         129: '38rem',
       },
       screens: {
-        '2xl': '1320px',
+        '2xl': '1280px',
       },
     },
   },

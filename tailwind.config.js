@@ -21,6 +21,10 @@ module.exports = {
       screens: {
         '2xl': '1280px',
       },
+      borderRadius: {
+        cekung: '0.9rem'
+      },
+
     },
   },
   plugins: [],

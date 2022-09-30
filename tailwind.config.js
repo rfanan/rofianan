@@ -10,7 +10,8 @@ module.exports = {
       colors: {
         textHover: '#1d4ed8',
         dark: '#0f172a',
-        primary: '#7e22ce'
+        primary: '#7e22ce',
+        pelangi: 'bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500'
       },
       width: {
         128: '26rem',
@@ -22,9 +23,11 @@ module.exports = {
         '2xl': '1280px',
       },
       borderRadius: {
-        cekung: '0.9rem'
+        cekung: '0.9rem',
       },
-
+      fontFamily: {
+        body: 'Nunito Sans',
+      },
     },
   },
   plugins: [],

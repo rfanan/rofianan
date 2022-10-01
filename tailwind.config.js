@@ -27,6 +27,7 @@ module.exports = {
       },
       fontFamily: {
         body: 'Nunito Sans',
+        poppin: 'Poppins',
       },
     },
   },

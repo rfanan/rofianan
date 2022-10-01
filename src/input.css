@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -29,5 +29,58 @@
         background: radial-gradient(circle at left, transparent 15px, currentColor 0) left, radial-gradient(circle at right, transparent 15px, currentColor 0) right;
         background-size: 60% 100%;
         background-repeat: no-repeat;
+    }
+}
+
+
+.button {
+    cursor: pointer;
+    color: white;
+    border: 0;
+    background: none;
+    width: 7rem;
+    height: 7rem;
+    padding: 0;
+    margin: 1rem;
+}
+
+.button-deco {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border: 1px solid skyblue;
+    border-radius: 50%;
+    background: sandybrown;
+}
+
+.button-filter {
+    position: absolute;
+    width: 150%;
+    height: 200%;
+    border-radius: 50%;
+    top: -50%;
+    left: -25%;
+    transform: translate3d(0, 75%, 0);
+}
+
+.button-text,
+.button-text-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+@media(any-pointer:fine) {
+    .cursor {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        pointer-events: none;
     }
 }

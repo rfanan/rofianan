@@ -33,47 +33,6 @@
 }
 
 
-.button {
-    cursor: pointer;
-    color: white;
-    border: 0;
-    background: none;
-    width: 7rem;
-    height: 7rem;
-    padding: 0;
-    margin: 1rem;
-}
-
-.button-deco {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    border: 1px solid skyblue;
-    border-radius: 50%;
-    background: sandybrown;
-}
-
-.button-filter {
-    position: absolute;
-    width: 150%;
-    height: 200%;
-    border-radius: 50%;
-    top: -50%;
-    left: -25%;
-    transform: translate3d(0, 75%, 0);
-}
-
-.button-text,
-.button-text-inner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-}
 
 @media(any-pointer:fine) {
     .cursor {
@@ -83,4 +42,70 @@
         display: block;
         pointer-events: none;
     }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+header {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 1005;
+    height: 80px;
+}
+
+header h4 {
+    position: absolute;
+    left: 10%;
+    bottom: 1rem;
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+/* Splash screen */
+
+.intro {
+    position: fixed;
+    z-index: 20;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    transition: 0.9s;
+    opacity: 1;
+}
+
+
+.welcome-header {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+}
+
+.letter {
+    position: relative;
+    display: inline-block;
+    bottom: -20px;
+    opacity: 0;
+    font-size: 4rem;
+}
+
+.letter.active {
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+}
+
+.letter.fade {
+    bottom: 150px;
+    opacity: 0;
+    transition: ease-in-out 0.5s;
 }

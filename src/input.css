@@ -95,7 +95,7 @@ header h4 {
     display: inline-block;
     bottom: -20px;
     opacity: 0;
-    font-size: 4rem;
+    font-size: 2rem;
 }
 
 .letter.active {

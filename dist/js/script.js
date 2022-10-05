@@ -4,8 +4,6 @@ let intro = document.querySelector('.intro');
 let letter = document.querySelector('.welcome-header');
 let letterSpan = document.querySelectorAll('.letter');
 
-
-
 rotilapis.addEventListener('click', function () {
     rotilapis.classList.toggle('rotilapis-active');
     navMenu.classList.toggle('hidden')
@@ -32,17 +30,11 @@ window.addEventListener('click', function (e) {
 
 // intro
 window.addEventListener('DOMContentLoaded', () => {
-
-    window.onscroll = function () {
-        const header = document.querySelector('header');
-        header.classList.remove('navbar-fixed');
-    };
-
     setTimeout(() => {
         letterSpan.forEach((span, idx) => {
             setTimeout(() => {
                 span.classList.add('active');
-            }, (idx + 1) * 200)
+            }, (idx + 1) * 50)
         });
 
         setTimeout(() => {
@@ -50,12 +42,22 @@ window.addEventListener('DOMContentLoaded', () => {
                 setTimeout(() => {
                     span.classList.remove('active');
                     span.classList.add('fade');
-                }, (idx + 1) * 50)
+                }, (idx + 1) * 500)
             })
-        }, 1500)
+        }, 2000)
 
         setTimeout(() => {
             intro.style.top = '-100vh';
-        }, 2000)
+        }, 3000)
     })
 })
+
+
+let say = ["Halo", "Hey", "ola`", "Konnichiwa", "Bonjour", "anyoung", "Welcome"]
+tl = gsap.timeline(),
+    text = document.querySelector(".text"),
+    delay = 0.30;
+
+say.forEach((blurb, i) => {
+    tl.add(() => text.innerText = blurb, i * delay);
+});

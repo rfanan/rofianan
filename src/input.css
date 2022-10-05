@@ -44,29 +44,6 @@
     }
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Open Sans", sans-serif;
-}
-
-header {
-    position: relative;
-    left: 0;
-    top: 0;
-    width: 1005;
-    height: 80px;
-}
-
-header h4 {
-    position: absolute;
-    left: 10%;
-    bottom: 1rem;
-    font-size: 1.6rem;
-    color: #fff;
-}
-
 /* Splash screen */
 
 .intro {
@@ -101,11 +78,17 @@ header h4 {
 .letter.active {
     bottom: 0;
     opacity: 1;
-    transition: ease-in-out 0.5s;
 }
 
 .letter.fade {
     bottom: 150px;
     opacity: 0;
     transition: ease-in-out 0.5s;
+}
+
+.text {
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Poppins';
+    font-weight: bold;
 }

@@ -4,5 +4,4 @@ my portfolio
 
 wanna see ?
 visit this link 
-
-<a href="https://www.google.com/" target="_blank">Google</a>
+<a href="rfanan.netlify.app" target="_blank">here</a>

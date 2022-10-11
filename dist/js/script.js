@@ -45,7 +45,7 @@ window.addEventListener('DOMContentLoaded', () => {
 let say = ["Halo", "Hey", "ola`", "Konnichiwa", "Bonjour", "anyoung", "Welcome"],
     tl = gsap.timeline(),
     text = document.querySelector(".text"),
-    delay = 0.30;
+    delay = 0.25;
 
 say.forEach((blurb, i) => {
     tl.add(() => text.innerText = blurb, i * delay);
@@ -58,10 +58,6 @@ say.forEach((blurb, i) => {
 const scroll = new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),
     smooth: true,
-    smartphone: {
-        smooth: true
-    },
-    reloadOnContextChange: true,
 });
 
 const navBar = document.querySelector("header");
@@ -76,4 +72,3 @@ scroll.on("scroll", (position) => {
     }
 })
 
-scroll.LocomotiveScroll.update()

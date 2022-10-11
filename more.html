@@ -1,0 +1,95 @@
+<!-- more -->
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
+    <link href="dist/output.css" rel="stylesheet">
+    <title>More?</title>
+</head>
+
+<body class="bg-dark" data-scroll-container>
+    <section data-scroll-section class="bg-dark3 pt-6 pb-6 ">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <h1 class="text-slate-200">back</h1>
+            </div>
+        </div>
+    </section>
+    <section data-scroll-section class="pt-32 pb-32 bg-dark">
+        <div class="container">
+            <div class="w-full">
+                <div class="px-32">
+                    <h1 class="text-center font-bold text-slate-200">Scroll This ygy</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="img" class=" pt-20 pb-20 relative bg-dark2" data-scroll-section>
+        <div class="container">
+            <div class="flex flex-wrap justify-center">
+                <img data-scroll-target="#img" class="panel mt-16 height=" 920" width="1080" rounded-lg"
+                    src="/dist/img/rv1.jpg" alt="">
+                <img data-scroll-target="#img" class="panel mt-16 height=" 920" width="1080" rounded-lg"
+                    src="/dist/img/rv2.jpg" alt="">
+                <img data-scroll-target="#img" class="panel mt-16 height=" 920" width="1080" rounded-lg " src="
+                    /dist/img/rv3.jpg" alt="">
+                <img data-scroll-target="#img" class="panel mt-16 height=" 920" width="1080" rounded-lg " src="
+                    /dist/img/rv4.jpg" alt="">
+                <img data-scroll-target="#img" class="panel mt-16 height=" 920" width="1080" rounded-lg " src="
+                    /dist/img/rv5.jpg" alt="">
+                <img data-scroll-target="#img" class="panel mt-16 height=" 920" width="1080" rounded-lg " src="
+                    /dist/img/rv6.jpg" alt="">
+                <img data-scroll-target="#img" class="panel mt-16 height=" 920" width="1080" rounded-lg " src="
+                    /dist/img/rv7.jpg" alt="">
+                <img data-scroll-target="#img" class="panel mt-16 height=" 920" width="1080" rounded-lg " src="
+                    /dist/img/rv8.jpg" alt="">
+            </div>
+        </div>
+
+    </section>
+    <div class="py-7">
+        <h1 class="text-center">end scroll</h1>
+    </div>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+<script src="dist/js/locomotive-scroll.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js">
+</script>
+<script>
+
+
+
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.utils.toArray(".panel").forEach((panel, i) => {
+        ScrollTrigger.create({
+            trigger: panel,
+            start: "top top",
+            pin: true,
+            pinSpacing: false
+        });
+    });
+    ScrollTrigger.create({
+        snap: 1 / 8 // snap whole page to the closest section!
+    });
+    const scroll = new LocomotiveScroll({
+        el: document.querySelector('[data-scroll-container]'),
+        smooth: true,
+        multiplier: 1,
+        smartphone: {
+            smooth: true
+        },
+        tablet: {
+            smooth: true
+        },
+    });
+
+    scroll.on(scroll, ScrollTrigger.update);
+
+</script>
+
+</html>

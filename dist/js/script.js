@@ -9,17 +9,6 @@ rotilapis.addEventListener('click', function () {
     navMenu.classList.toggle('hidden')
 });
 
-// window.onscroll = function () {
-//     const header = document.querySelector('header');
-//     const fixedNav = header.offsetTop;
-//     if (window.pageYOffset > fixedNav) {
-//         header.classList.add('navbar-fixed')
-//     } else {
-//         header.classList.remove('navbar-fixed')
-//     }
-// }
-
-
 
 window.addEventListener('click', function (e) {
     if (e.target != rotilapis && e.target != navMenu) {
@@ -72,9 +61,7 @@ const scroll = new LocomotiveScroll({
     smartphone: {
         smooth: true
     },
-    tablet: {
-        smooth: true
-    },
+    reloadOnContextChange: true,
 });
 
 const navBar = document.querySelector("header");
@@ -88,3 +75,5 @@ scroll.on("scroll", (position) => {
 
     }
 })
+
+scroll.LocomotiveScroll.update()

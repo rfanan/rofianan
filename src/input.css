@@ -37,10 +37,6 @@
 
 /* Splash screen */
 
-.has-scoll-smooth-body {
-    overflow: hidden;
-}
-
 .intro {
     position: fixed;
     z-index: 1000;
@@ -86,4 +82,19 @@
     font-size: 60px;
     font-family: 'Poppins';
     font-weight: bold;
+}
+
+
+.parallax {
+    /* The image used */
+    background-image: url("/dist/img/rv2.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

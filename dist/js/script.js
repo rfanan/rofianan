@@ -42,10 +42,10 @@ window.addEventListener('DOMContentLoaded', () => {
     })
 })
 
-let say = ["Halo", "Hey", "ola`", "Konnichiwa", "Bonjour", "anyoung", "Welcome"],
+let say = ["Halo", "Hey", "ola`", "Konnichiwa", "Bonjour", "anyoung", "Welcome :)"],
     tl = gsap.timeline(),
     text = document.querySelector(".text"),
-    delay = 0.30;
+    delay = 0.25;
 
 say.forEach((blurb, i) => {
     tl.add(() => text.innerText = blurb, i * delay);
@@ -54,16 +54,14 @@ say.forEach((blurb, i) => {
 // end intro
 
 
-
+//locomotive scroll
 const scroll = new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),
     smooth: true,
-
-
 });
 
-const navBar = document.querySelector("header");
 
+const navBar = document.querySelector("header");
 scroll.on("scroll", (position) => {
 
     if (position.scroll.y > 20) {
@@ -74,3 +72,10 @@ scroll.on("scroll", (position) => {
     }
 })
 
+// time
+var time = new Date();
+document.getElementById('time').innerHTML = time.toTimeString();
+
+// year
+const year = new Date();
+document.getElementById('year').innerHTML = year.getFullYear();

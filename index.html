@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="dark">
+<html class="dark scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -14,9 +14,9 @@
 
 <body class="font-poppin" data-scroll-container>
     <!-- intro -->
-    <div class="intro">
+    <div class="intro ">
         <h1 class="welcome-header">
-            <span class="text letter text-center">Halo</span>
+            <span class="text letter text-slate-300 text-center">Halo</span>
         </h1>
     </div>
     <!-- end intro -->
@@ -79,9 +79,9 @@
                             <span class="text-primary text-6xl leading-tight font-bold">Myself 👦🏻</span>
                         </h1>
                         <h2 class="font-semibold mb-2"> </h2>
-                        <h2 class="font-medium mb-10 text-slate-500">Lorem ipsum dolor sit amet consectetur
-                            adipisicing
-                            elit. Odiisaninasi</h2>
+                        <h2 class="text-base font-medium mb-8 text-slate-500">I hope you will get to know a little bit
+                            about me and enjoy my work.
+                        </h2>
                         <button
                             class=" bg-purple-500 border-4 border-slate-900 rounded-full text-slate-100 px-8 py-4 transition duration-300 ease-in-out hover:border-4 hover:duration-300 hover:scale-110 hover:border-primary">Let's
                             Go</button>
@@ -232,27 +232,35 @@
     </section>
 
     <!-- our portofolio start -->
-    <section id="portfolio" data-scroll-section class="pt-32 pb-32 relative bg-white">
+    <section id="portfolio" class="pt-32 pb-32 relative bg-white" data-scroll-section>
         <div class="coantainer">
             <div class="w-full self-center inline-block">
-                <h1 data-scroll class="text-base pb-10 text-center text-3xl font-bold"> <span class="text-primary">My
+                <h1 class="pb-10 text-center text-3xl font-bold"> <span class="text-primary">My
                     </span>
                     Portofolio</h1>
             </div>
+
             <div class="grid grid-cols-1  px-4 lg:px-28 md:grid-cols-2  gap-4 mt-10">
-                <div class="bg-cover flex justify-center rounded-lg ">
+                <div class="bg-cover flex justify-center rounded-lg">
                     <img src="dist/img/p1.jpg" class="md:h-129 md:border rounded-lg" alt="">
                 </div>
-                <div class="self-center">
-                    <span class="text-base font-bold text-2xl text-center">UI / UX</span>
+
+                <div class=" self-center">
+                    <span class="font-bold text-2xl text-center">UI / UX</span>
                     <p>Me and my friend got this project from dispar (dinas pariwisata), we create a web
                         design about 'Wiasata Pantai Banten'</p>
                 </div>
                 <div class=" md:row-start-3 self-center">
                     <span class="font-bold text-2xl">Mobile App</span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, dicta?</p>
+                    <p class="text-sm leading-relaxed">
+                        This project "KKP" or apprenticeship in Ministry of Law and Human Rights,me and my
+                        friend made
+                        an application to manage booty data stored in rupbasan's warehouse. we made its with
+                        Android
+                        Studio, java language and firebase databse
+                    </p>
                 </div>
-                <div class=" flex bg-cover relative row-start-3">
+                <div class="bg-fixed flex bg-cover relative row-start-3">
                     <img src="dist/img/p2.png" class="rounded-lg" alt="">
                 </div>
 
@@ -268,13 +276,13 @@
     <section id="skill" data-scroll-section class="pt-32 pb-36 bg-purple-50">
         <div class="container">
             <div class="text-center">
-                <h1 class="text-base font-bold text-3xl text-primary">Skill</h1>
+                <h1 class=" font-bold text-3xl text-primary">Skill</h1>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, pariatur.</p>
                 <h4>ssklasksajnsjaas</h4>
             </div>
             <div class="flex flex-wrap justify-center">
                 <div class="w-full font-bold  pr-4  lg:w-2/5">
-                    <div class="bg-primary text-purple-500 rounded-cekung mt-4 px-8">
+                    <div class="bg-dark text-purple-500 rounded-cekung mt-4 px-8">
                         <h1 class="py-7 lg:py-10 text-center">HTML</h1>
                     </div>
                 </div>
@@ -387,24 +395,20 @@
     <!-- contact us end -->
 
     <!-- footer -->
-    <section id="footer" data-scroll-section class="pt-5 pb-5 bg-dark">
+    <section id="footer" data-scroll-section class="pt-5 pb-10 bg-dark">
         <div class="conatainer">
             <div class="flex flex-nowrap">
                 <div class="justify-start">
                     <span class="text-slate-100 px-8">
                         Version
                     </span>
-                    <p class="text-slate-500 px-8">
-                        2022
-                    </p>
+                    <p id="year" class="text-slate-500 px-8"></p>
                 </div>
                 <div>
                     <span class="text-slate-100">
                         location
                     </span>
-                    <p class="text-slate-500">
-                        indonesia
-                    </p>
+                    <p id="time" class="text-slate-500"> </p>
                 </div>
             </div>
         </div>

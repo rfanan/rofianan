@@ -80,8 +80,8 @@ document.getElementById('time').innerHTML = time.toTimeString();
 const year = new Date();
 document.getElementById('year').innerHTML = year.getFullYear();
 
-var magnets = document.querySelectorAll('.magnetic')
-var strength = 50
+let magnets = document.querySelectorAll('.magnetic')
+let strength = 90
 
 magnets.forEach((magnet) => {
     magnet.addEventListener('mousemove', moveMagnet);
@@ -91,8 +91,8 @@ magnets.forEach((magnet) => {
 });
 
 function moveMagnet(event) {
-    var magnetButton = event.currentTarget
-    var bounding = magnetButton.getBoundingClientRect()
+    let magnetButton = event.currentTarget
+    let bounding = magnetButton.getBoundingClientRect()
 
     //console.log(magnetButton, bounding)
 
@@ -102,5 +102,5 @@ function moveMagnet(event) {
         ease: Power4.easeOut
     })
 
-    //magnetButton.style.transform = 'translate(' + (((( event.clientX - bounding.left)/(magnetButton.offsetWidth))) - 0.5) * strength + 'px,'+ (((( event.clientY - bounding.top)/(magnetButton.offsetHeight))) - 0.5) * strength + 'px)';
+    // magnetButton.style.transform = 'translate(' + ((((event.clientX - bounding.left) / (magnetButton.offsetWidth))) - 0.5) * strength + 'px,' + ((((event.clientY - bounding.top) / (magnetButton.offsetHeight))) - 0.5) * strength + 'px)';
 }

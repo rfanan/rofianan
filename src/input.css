@@ -98,3 +98,15 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.magnetic {
+    margin: -100px;
+    padding: 100px;
+    display: inline-block;
+    border-radius: 50%;
+    /*border: 1px solid #000; //use this for debugging*/
+}
+
+#magnet-button {
+    display: inline-block;
+}

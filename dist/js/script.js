@@ -72,13 +72,24 @@ scroll.on("scroll", (position) => {
     }
 })
 
-// time
-var time = new Date();
-document.getElementById('time').innerHTML = time.toTimeString();
 
 // year
 const year = new Date();
-document.getElementById('year').innerHTML = year.getFullYear();
+document.getElementById('year').innerHTML = year.getUTCFullYear();
+
+// time desktop
+let times = new Date();
+document.getElementById('times').innerHTML = times.toTimeString();
+
+// time mobile
+let days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+let date = new Date();
+let today = days[date.getDay()]
+
+document.getElementById("time").innerHTML = today;
+
+
+
 
 let magnets = document.querySelectorAll('.magnetic')
 let strength = 90
@@ -104,3 +115,4 @@ function moveMagnet(event) {
 
     // magnetButton.style.transform = 'translate(' + ((((event.clientX - bounding.left) / (magnetButton.offsetWidth))) - 0.5) * strength + 'px,' + ((((event.clientY - bounding.top) / (magnetButton.offsetHeight))) - 0.5) * strength + 'px)';
 }
+

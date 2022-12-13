@@ -2,19 +2,17 @@
 
 <h1>Hi there, this is my web portfolio :)</h1>
 <p>
-    Technology i use :
-<p>
+    <b>Technology i use :</b>
     HTML
-<p>
     CSS
-<p>
    Javascript
 <p>
     node.js for install package / library
-<p>
+<span>
    locomotif scroll 
+    <p>
     <a href="https://locomotivemtl.github.io/locomotive-scroll/">visit</a>
-<p>
+ </span>
   GSAP.js
 <a href="https://greensock.com/gsap/">visit</a>
  <p>

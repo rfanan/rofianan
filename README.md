@@ -10,7 +10,6 @@
     node.js for install package / library
 <p>
    locomotif scroll 
-    
     <a href="https://locomotivemtl.github.io/locomotive-scroll/">visit</a>
 <p>
   GSAP.js

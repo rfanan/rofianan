@@ -8,11 +8,11 @@
    Javascript
 <p>
     node.js for install package / library
-<span>
+<p>
    locomotif scroll 
-    <p>
+    
     <a href="https://locomotivemtl.github.io/locomotive-scroll/">visit</a>
- </span>
+<p>
   GSAP.js
 <a href="https://greensock.com/gsap/">visit</a>
  <p>

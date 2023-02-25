@@ -12,7 +12,7 @@ module.exports = {
         dark: '#0f172a',
         primary: '#7e22ce',
         dark2: '#171717',
-        dark3: '#372948',
+        dark3: '#212121',
         pelangi: 'bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500'
       },
       width: {
@@ -28,8 +28,9 @@ module.exports = {
         cekung: '0.9rem',
       },
       fontFamily: {
-        body: 'Nunito Sans',
+        body: 'Nunito',
         poppin: 'Poppins',
+        inter: 'Inter',
       },
     },
   },

@@ -13,11 +13,11 @@
 
 <body class="font-poppin" data-scroll-container>
     <!-- intro -->
-    <!-- <div class="intro ">
+    <div class="intro ">
         <h1 class="welcome-header">
             <span class="text letter text-slate-300 text-center">Halo</span>
         </h1>
-    </div> -->
+    </div>
     <!-- end intro -->
     <!-- navbar -->
     <header class="bg-transparent  absolute top-0 left-0 w-full items-center z-10">
@@ -67,7 +67,7 @@
 
 
     <!-- Hero section start -->
-    <section id="home" data-scroll-section class="pt-32 pb-10 lg:pb-20 lg:pt-20">
+    <section id="home" data-scroll-section class="pt-32 pb-10 lg:pb-20 md:pt-32">
         <div class="container">
             <div class="flex flex-wrap">
                 <div class="w-full self-center px-4 md:w-1/2 ">
@@ -93,9 +93,10 @@
                 </div>
                 <div class="w-full self-center px-4 md:w-1/2">
                     <div class="flex justify-center mt-5">
-                        <p class="bg-black rounded-full h-56 w-52">
-                            <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_KTTSsGSbg1.json"
-                                background="transparent" speed="1" style="width: 300px; height: 300px;" loop
+                        <p class="bg-dark3 rounded-full h-auto w-auto">
+                            <lottie-player class="-right-8"
+                                src="https://assets9.lottiefiles.com/packages/lf20_KTTSsGSbg1.json"
+                                background="transparent" speed="1" style="width: 240px; height: 240px;" loop
                                 autoplay></lottie-player>
                             <!-- https://assets7.lottiefiles.com/packages/lf20_ca0xjdgv.json -->
                         </p>
@@ -107,16 +108,16 @@
     <!-- Hero section end -->
 
     <!-- about us start -->
-    <section id="about" data-scroll-section class="pt-10 pb-28 bg-purple-50 leading-relaxed">
+    <section id="about" data-scroll-section class="pt-16 pb-28 bg-purple-50 leading-relaxed">
         <div class="conatiner">
             <div class="flex flex-wrap">
                 <div class="w-full self-center px-8 mb-10 lg:px-10">
-                    <h1 class="text-center text-4xl mb-6">
+                    <h1 data-scroll data-scroll-speed="1" class="text-center text-4xl mb-8">
                         About
                         <span class="text-primary">Me</span>
                     </h1>
 
-                    <h1 data-scroll
+                    <h1 data-scroll data-scroll-speed="1"
                         class="text-base text-center tracking-wide leading-relaxed text-slate-700 mb-20 lg:text-center lg:mb-32 lg:px-32">
                         Hallo ,
                         <span class="text-base font-bold">i'm Rofi'anan</span>
@@ -126,7 +127,7 @@
                         in diverse environments. Looking for job opportunities that provide opportunities to develop
                         into a professional career.
                     </h1>
-                    <h1 class="text-base text-center text-slate-700 ">
+                    <h1 data-scroll data-scroll-speed="1" class="text-base text-center text-slate-700 ">
                         <i>“Il ne faut pas s’offenser que les autres nouns cachent la vérité, puisque nous nous la
                             cachons si souvent à nous-mêmes.”</i>
                         <p class="font-semibold">
@@ -135,8 +136,9 @@
                     </h1>
                     <div class="w-full px-10 text-center mt-5">
                         <div class="relative">
-                            <h1 class="mb-2 text-slate-700">Follow me on Media Social</h1>
-                            <div class="flex items-center justify-center">
+                            <h1 data-scroll data-scroll-speed="1" class="mb-2 text-slate-700">Follow me on Media Social
+                            </h1>
+                            <div data-scroll data-scroll-speed="1" class="flex items-center justify-center">
                                 <!-- instagram -->
                                 <a href="https://www.instagram.com/rfanann/" target="_blank"
                                     class="w-9 h-9 mr-3 flex justify-center  border hover:text-white border-slate-800 rounded-full hover:border-primary hover:bg-primary">
@@ -177,7 +179,7 @@
     </section>
     <!-- about us end -->
 
-    <section id="serve" class="py-20 px-4 lg:px-1/2 lg:py-60 relative bg-dark3" data-scroll-section>
+    <section id="serve" class="py-20 px-4 md:px-1/2 lg:py-60 relative bg-dark3" data-scroll-section>
         <h2
             class="absolute  top-1/2 -mt-5 text-slate-100 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -skew-x-12 lg:whitespace-nowrap text-2xl lg:text-9xl font-extrabold lg:py-4">
             <span class="inline-block" data-scroll data-scroll-repeat data-scroll-speed="3">T</span>
@@ -192,20 +194,20 @@
         <div class="transform rotate-12 skew-x-12">
             <div data-scroll data-scroll-direction="horizontal" data-scroll-speed="9" data-scroll-target="#serve">
                 <span
-                    class="text-3xl font-medium  text-slate-100 lg:text-7xl bg-primary text-center lg:p-5 lg:whitespace-nowrap">
+                    class="text-4xl font-bold  text-slate-100 md:text-7xl bg-primary text-center md:p-5 whitespace-nowrap">
                     Thank U for reading "about me" and yap that's "About Me"</span>
             </div>
         </div>
-        <div class="transform -rotate-6 -skew-x-12 mt-20 lg:mt-20">
+        <div class="transform -rotate-6 -skew-x-12 mt-20 md:mt-20">
             <div data-scroll data-scroll-direction="horizontal" data-scroll-speed="-20" data-scroll-target="#serve">
-                <span class="text-3xl font-medium  text-slate-100 lg:text-7xl bg-primary lg:p-5 lg:whitespace-nowrap">
+                <span class="text-4xl font-bold  text-slate-100 md:text-7xl bg-primary md:p-5 whitespace-nowrap">
                     WOOAAAAHHH YOU REALLY LIKE SCROLL
                 </span>
             </div>
         </div>
-        <div class="transform rotate-6 mt-28 lg:mt-80">
+        <div class="transform rotate-6 mt-28 md:mt-80">
             <div data-scroll data-scroll-direction="horizontal" data-scroll-speed="-9" data-scroll-target="#serve">
-                <span class="text-3xl font-medium  text-slate-100 lg:p-5 lg:text-7xl bg-primary lg:whitespace-nowrap">
+                <span class="text-4xl font-bold  text-slate-100 md:p-5 md:text-7xl bg-primary whitespace-nowrap">
                     WOOAAAAHHH YOU REALLY LIKE SCROLL
                 </span>
             </div>
@@ -218,7 +220,7 @@
 
         <div class="transform -rotate-6 -skew-x-12 -mt-32">
             <div data-scroll data-scroll-direction="horizontal" data-scroll-speed="9" data-scroll-target="#serve">
-                <span class="text-3xl font-medium  text-slate-100 lg:p-5 lg:text-7xl bg-primary lg:whitespace-nowrap">
+                <span class="text-4xl font-bold  text-slate-100 md:p-5 md:text-7xl bg-primary whitespace-nowrap">
                     WOOOOOOOOOOOOHHH COOL, YOU REALLY LIKE SCROLL
                 </span>
             </div>
@@ -291,7 +293,7 @@
     <!-- our portofolio end -->
 
     <!-- new portfolio -->
-    <section class="pt-32 pb-32 bg-white" data-scroll-section>
+    <section id="portfolio" class="pt-32 pb-32 bg-white" data-scroll-section>
         <div class="container">
             <div class="w-full self-center inline-block pb-10">
                 <h1 class="pb-10 text-center text-4xl">
@@ -482,15 +484,15 @@
                 <div class="w-full lg:w-1/2">
                     <div class="mt-5 px-8 col-start-2 bg-slate-400  bg-opacity-10 p-7 rounded-lg">
                         <span class="text-slate-200">What your name ?</span>
-                        <p class="text-slate-700">Rofi'anan</p>
+                        <p class="text-slate-700">John Doe</p>
                     </div>
                     <div class="mt-5 px-8 col-start-2 bg-slate-400 bg-opacity-10 p-7 rounded-lg">
                         <span class="text-slate-200">What your email ?</span>
-                        <p class="text-slate-700">Alice@haku.com</p>
+                        <p class="text-slate-700">JohnDOe@gmail.com</p>
                     </div>
                     <div class="mt-5 px-8 col-start-2 bg-slate-400  bg-opacity-10 p-7 rounded-lg">
                         <span class="text-slate-200">What's the name of your organization?</span>
-                        <p class="text-slate-700">A&lice</p>
+                        <p class="text-slate-700">John Doe Corporation</p>
                     </div>
                     <div class="mt-5 px-8 col-start-2 bg-slate-400  bg-opacity-10 p-7 rounded-lg">
                         <span class="text-slate-200">What services are you looking for?</span>
@@ -506,31 +508,31 @@
 
                 </div>
             </div>
-
         </div>
+
     </section>
     <!-- contact us end -->
 
     <!-- footer -->
-    <section id="footer" data-scroll-section class="pt-5 pb-24 bg-dark">
+    <section id="footer" data-scroll data-scroll-section class="pt-6 pb-14 bg-dark">
         <div class="conatainer">
             <div class="flex flex-wrap">
-                <div class="flex w-1/2 md:w-1/2 justify-start">
+                <div class="flex w-1/2 md:w-full justify-start">
                     <div>
-                        <span class="text-slate-100 text-sm px-4 md:px-8 md:text-base">
+                        <span data-scroll class="text-slate-100 text-sm px-4 md:px-8 md:text-base">
                             Version
                         </span>
                         <p id="year" class="text-slate-500 text-sm px-4 md:px-8 md:text-base"></p>
                     </div>
                     <!-- untuk mobile -->
-                    <div class="md:hidden">
+                    <div data-scroll class="md:hidden">
                         <span class="text-slate-100 text-sm md:text-base">
                             Today
                         </span>
                         <p id="time" class="text-slate-500 text-sm md:text-base"> </p>
                     </div>
                     <!-- untuk desktop -->
-                    <div class="hidden md:block">
+                    <div data-scroll class="hidden md:block">
                         <span class="text-slate-100 text-sm md:text-base">
                             location
                         </span>
@@ -570,12 +572,13 @@
                 </div>
                 <!-- desktop -->
                 <div class="items-center hidden md:flex justify-end px-8 md:w-1/2 md:text-base">
-                    <span class="text-slate-100 text-sm md:text-base">Made with <span class=" fill-red-500">🧡</span> by
+                    <span data-scroll class="text-slate-100 text-sm md:text-base">Made with <span
+                            class=" fill-red-500">🧡</span> by
                         Rofi'anan</span>
                 </div>
                 <!-- end -->
             </div>
-            <div class="flex pt-10 items-center justify-center px-8 md:hidden">
+            <div data-scroll class="flex pt-10 items-center justify-center px-8 md:hidden">
                 <span class="text-slate-100 text-sm md:text-base">Made with <span class=" fill-red-500">🧡</span> by
                     Rofi'anan</span>
             </div>

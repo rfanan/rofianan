@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="dark scroll-smooth">
+<html class="dark scroll-smooth max-h-screen">
 
 <head>
     <meta charset="UTF-8">
@@ -11,13 +11,13 @@
     <link rel="shortcut icon" type="image" sizes="16×16" href="./dist/img/🅡.png">
 </head>
 
-<body class="font-poppin" data-scroll-container>
+<body class="font-poppin " data-scroll-container>
     <!-- intro -->
-    <div class="intro ">
+    <!-- <div class="intro ">
         <h1 class="welcome-header">
             <span class="text letter text-slate-300 text-center">Halo</span>
         </h1>
-    </div>
+    </div> -->
     <!-- end intro -->
     <!-- navbar -->
     <header class="bg-transparent  absolute top-0 left-0 w-full items-center z-10">
@@ -108,7 +108,7 @@
     <!-- Hero section end -->
 
     <!-- about us start -->
-    <section id="about" data-scroll-section class="pt-16 pb-28 bg-purple-50 leading-relaxed">
+    <section id="about" data-scroll-section class="pt-16 pb-16 bg-purple-50 leading-relaxed">
         <div class="conatiner">
             <div class="flex flex-wrap">
                 <div class="w-full self-center px-8 mb-10 lg:px-10">
@@ -179,7 +179,8 @@
     </section>
     <!-- about us end -->
 
-    <section id="serve" class="py-20 px-4 md:px-1/2 lg:py-60 relative bg-dark3" data-scroll data-scroll-section>
+    <section id="serve" class="py-20 px-4 md:px-1/2 lg:py-60 relative bg-dark3 hidden md:block" data-scroll
+        data-scroll-section>
         <h2
             class="absolute  top-1/2 -mt-5 text-slate-100 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -skew-x-12 lg:whitespace-nowrap text-2xl lg:text-9xl font-extrabold lg:py-4">
             <span class="inline-block" data-scroll data-scroll-repeat data-scroll-speed="3">T</span>
@@ -199,13 +200,13 @@
             </div>
         </div>
         <div class="transform -rotate-6 -skew-x-12 mt-20 md:mt-20">
-            <div data-scroll data-scroll-direction="horizontal" data-scroll-speed="-20" data-scroll-target="#serve">
+            <div data-scroll data-scroll-direction="horizontal" data-scroll-speed="-9" data-scroll-target="#serve">
                 <span class="text-4xl font-bold  text-slate-100 md:text-7xl bg-primary md:p-5 whitespace-nowrap">
-                    WOOAAAAHHH YOU REALLY LIKE SCROLL
+                    KEEP SCROLL AND YOU LOOK LIKE AWESOME BRUH
                 </span>
             </div>
         </div>
-        <div class="transform rotate-6 mt-28 md:mt-80">
+        <div class="transform rotate-6 skew-x-12 mt-28 md:mt-80">
             <div data-scroll data-scroll-direction="horizontal" data-scroll-speed="-9" data-scroll-target="#serve">
                 <span class="text-4xl font-bold  text-slate-100 md:p-5 md:text-7xl bg-primary whitespace-nowrap">
                     WOOAAAAHHH YOU REALLY LIKE SCROLL
@@ -517,7 +518,7 @@
     <section id="footer" data-scroll data-scroll-section class="pt-6 pb-14 bg-dark">
         <div class="conatainer">
             <div class="flex flex-wrap">
-                <div class="flex w-1/2 md:w-full justify-start">
+                <div class="flex w-1/2 md:w-1/2 justify-start">
                     <div>
                         <span data-scroll class="text-slate-100 text-sm px-4 md:px-8 md:text-base">
                             Version
@@ -585,6 +586,7 @@
         </div>
     </section>
     <!-- end footer -->
+
     <!-- backtotop -->
 </body>
 <script type="module" src="dist/js/script.js"></script>

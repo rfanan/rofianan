@@ -14,11 +14,11 @@
 
 <body class="font-poppin " data-scroll-container>
     <!-- intro -->
-    <div class="intro ">
+    <!-- <div class="intro ">
         <h1 class="welcome-header">
             <span class="text letter text-slate-300 text-center">Halo</span>
         </h1>
-    </div>
+    </div> -->
     <!-- end intro -->
     <!-- navbar -->
     <header class="bg-transparent  absolute top-0 left-0 w-full items-center z-10">
@@ -68,7 +68,7 @@
 
 
     <!-- Hero section start -->
-    <section id="home" data-scroll-section class="pt-32 pb-10 lg:pb-20 md:pt-32">
+    <section id="home" data-scroll-section class="font-poppin pt-32 pb-10 lg:pb-20 md:pt-32">
         <div class="container">
             <div class="flex flex-wrap">
                 <div class="w-full self-center px-4 md:w-1/2 ">
@@ -95,7 +95,11 @@
                 <div class="w-full self-center px-4 md:w-1/2">
                     <div class="flex justify-center mt-5">
                         <p class="bg-dark3 rounded-full h-auto w-auto">
-                            <lottie-player class="-right-8"
+                            <lottie-player class="-right-8 hidden md:block"
+                                src="https://assets9.lottiefiles.com/packages/lf20_KTTSsGSbg1.json"
+                                background="transparent" speed="1" style="width: 450px; height: 450px;" loop
+                                autoplay></lottie-player>
+                            <lottie-player class="-right-8 pb-8 block md:hidden"
                                 src="https://assets9.lottiefiles.com/packages/lf20_KTTSsGSbg1.json"
                                 background="transparent" speed="1" style="width: 300px; height: 300px;" loop
                                 autoplay></lottie-player>
@@ -104,6 +108,9 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="pt-10">
+            <h1 class="text-center ">Keep scroll 👇🏻</h1>
         </div>
     </section>
     <!-- Hero section end -->
@@ -231,68 +238,7 @@
 
     </section>
 
-    <!-- our portofolio start -->
-    <!-- <section id="portfolio" class="pt-32 pb-16 relative bg-white" data-scroll-section>
-        <div class="coantainer">
-            <div class="w-full self-center inline-block">
-                <h1 class="pb-10 text-center text-3xl font-bold">
-                    <span class="text-primary">My</span>
-                    Portofolio
-                </h1>
-            </div>
 
-            <div class="grid grid-cols-1 pb-10 px-4 lg:px-28 md:grid-cols-2  gap-4 mt-10">
-                <div class="bg-cover flex justify-center rounded-lg">
-                    <img src="dist/img/p1.jpg" class="md:h-129 h-96 border-2 md:border-2 rounded-lg" alt="">
-                </div>
-                <div class=" self-center">
-                    <span class="font-bold px-4 text-2xl text-center">UI/UX Design</span>
-                    <p class="px-4 text-sm">Me and my friend got this project from dispar (dinas pariwisata), we create
-                        a web
-                        design about 'Wiasata Pantai Banten'
-                    </p>
-                </div>
-                <div class=" md:row-start-3 self-center">
-                    <span class="font-bold text-2xl px-4">Mobile App</span>
-                    <p class="text-sm leading-relaxed px-4">
-                        This project "KKP" or apprenticeship in Ministry of Law and Human Rights,me and my
-                        friend made
-                        an application to manage booty data stored in rupbasan's warehouse. we made its with
-                        Android
-                        Studio, java language and firebase databse
-                    </p>
-                </div>
-                <div class="bg-fixed flex bg-cover justify-center row-start-3">
-                    <img src="dist/img/p2.png" class="rounded-lg md:h-129" alt="">
-                </div>
-                <div class="bg-cover flex justify-center md:row-start-4">
-                    <img src="dist/img/NFT.png" class="md:h-129 h-96 " alt="">
-                </div>
-                <div class="md:row-start-4 self-center">
-                    <span class="font-bold px-4 text-2xl text-center">Mobile App NFT Design </span>
-                    <p class="px-4 text-sm">
-                        This design for Market NFT, you can Discover, buy, sell, and collection NFT. you can see
-                        trending NFT and
-                        Category on right icon home.
-                        <br>
-                        so let explore NFT :)
-                    </p>
-                </div>
-                <p class="text-white md:row-start-5">
-                    maybe i can redesgin my portfolio :)
-                </p>
-            </div>
-            <div class="flex justify-center">
-                <div class="magnetic">
-                    <button onclick="notif()"
-                        class="magnetic-button p-4 px-10 bg-primary text-white rounded-full hover:bg-slate-900 ">
-                        More ?
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- our portofolio end -->
 
     <!-- new portfolio -->
     <section id="portfolio" class="pt-32 pb-32 bg-white" data-scroll-section>
